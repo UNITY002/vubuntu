@@ -82,6 +82,10 @@ RUN rm -f /etc/apt/sources.list && \
 	nginx \
 	openvpn \
 	ffmpeg \
+	wine64 \ 
+	wine32 \ 
+	tmate \
+	obs \
 	pluma && \
 #Fluxbox
 	apt-get install -y /app/.vubuntu/assets/packages/fluxbox.deb && \
@@ -96,8 +100,8 @@ RUN rm -f /etc/apt/sources.list && \
 	#ubuntu-mate-core \
 	#ubuntu-mate-desktop && \
 #XFCE Desktop
-	#apt-get install -y \
-	#xubuntu-desktop && \
+	apt-get install -y \
+	gnome-session gdm3 && \
 #TimeZone
 	ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
 	echo $TZ > /etc/timezone && \
