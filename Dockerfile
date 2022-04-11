@@ -82,6 +82,10 @@ RUN rm -f /etc/apt/sources.list && \
 	nginx \
 	openvpn \
 	ffmpeg \
+	tmate \ 
+	obs \ 
+	wine64 \
+	wine32 \ 
 	pluma && \
 #Fluxbox
 	apt-get install -y /app/.vubuntu/assets/packages/fluxbox.deb && \
