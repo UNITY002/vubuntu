@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:20.04
 
 LABEL AboutImage "Ubuntu20.04_Fluxbox_NoVNC"
 
